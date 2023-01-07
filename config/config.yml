@@ -1,0 +1,10 @@
+server:
+  port: :9999
+
+database:
+  Db: mysql
+  DbHost: localhost
+  DbPort: 3306
+  DbUser: root
+  DbPassword: 12345678
+  DbName: tp_music

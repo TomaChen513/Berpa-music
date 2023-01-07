@@ -1,0 +1,399 @@
+info:
+  contact: {}
+  title: berpar-Music
+paths:
+  /api/collection/add:
+    post:
+      produces:
+      - application/json
+      responses: {}
+      summary: 添加收藏
+      tags:
+      - collect
+  /api/collection/delete:
+    get:
+      produces:
+      - application/json
+      responses: {}
+      summary: 取消收藏
+      tags:
+      - collect
+  /api/collection/detail:
+    get:
+      produces:
+      - application/json
+      responses: {}
+      summary: 返回指定用户的收藏列表
+      tags:
+      - collect
+  /api/collection/status:
+    post:
+      produces:
+      - application/json
+      responses: {}
+      summary: 是否收藏歌曲
+      tags:
+      - collect
+  /api/comment/add:
+    post:
+      produces:
+      - application/json
+      responses: {}
+      summary: 提交评论
+      tags:
+      - comment
+  /api/comment/delete:
+    get:
+      produces:
+      - application/json
+      responses: {}
+      summary: 删除评论
+      tags:
+      - comment
+  /api/comment/like:
+    post:
+      produces:
+      - application/json
+      responses: {}
+      summary: 点赞
+      tags:
+      - comment
+  /api/comment/song/detail:
+    get:
+      produces:
+      - application/json
+      responses: {}
+      summary: 获得指定歌曲ID的评论列表
+      tags:
+      - comment
+  /api/comment/songList/detail:
+    get:
+      produces:
+      - application/json
+      responses: {}
+      summary: 获得指定歌单ID的评论列表
+      tags:
+      - comment
+  /api/listSong/add:
+    post:
+      produces:
+      - application/json
+      responses: {}
+      summary: 给歌单添加歌曲
+      tags:
+      - listSong
+  /api/listSong/delete:
+    get:
+      produces:
+      - application/json
+      responses: {}
+      summary: 删除歌单里的歌曲
+      tags:
+      - listSong
+  /api/listSong/detail:
+    get:
+      produces:
+      - application/json
+      responses: {}
+      summary: 根据歌曲id获得歌单歌曲信息
+      tags:
+      - listSong
+  /api/listSong/update:
+    post:
+      produces:
+      - application/json
+      responses: {}
+      summary: 更新歌单的歌曲信息
+      tags:
+      - listSong
+  /api/rankList:
+    get:
+      produces:
+      - application/json
+      responses: {}
+      summary: 获取指定歌单评分
+      tags:
+      - rankList
+  /api/rankList/add:
+    post:
+      produces:
+      - application/json
+      responses: {}
+      summary: 提交评分
+      tags:
+      - rankList
+  /api/rankList/user:
+    get:
+      produces:
+      - application/json
+      responses: {}
+      summary: 根据用户获取指定歌单评分
+      tags:
+      - rankList
+  /api/singer:
+    get:
+      produces:
+      - application/json
+      responses: {}
+      summary: 返回所有歌手
+      tags:
+      - singer
+  /api/singer/add:
+    post:
+      produces:
+      - application/json
+      responses: {}
+      summary: 添加歌手
+      tags:
+      - singer
+  /api/singer/avatar/update:
+    post:
+      produces:
+      - application/json
+      responses: {}
+      summary: 更新歌手图片
+      tags:
+      - singer
+  /api/singer/delete:
+    get:
+      produces:
+      - application/json
+      responses: {}
+      summary: 删除歌手
+      tags:
+      - singer
+  /api/singer/name/detail:
+    get:
+      produces:
+      - application/json
+      responses: {}
+      summary: 根据歌手名查找歌手
+      tags:
+      - singer
+  /api/singer/sex/detail:
+    get:
+      produces:
+      - application/json
+      responses: {}
+      summary: 根据歌手性别查找歌手
+      tags:
+      - singer
+  /api/singer/update:
+    post:
+      produces:
+      - application/json
+      responses: {}
+      summary: 更新歌手信息
+      tags:
+      - singer
+  /api/song:
+    get:
+      produces:
+      - application/json
+      responses: {}
+      summary: 获得所有歌曲
+      tags:
+      - song
+  /api/song/add:
+    post:
+      produces:
+      - application/json
+      responses: {}
+      summary: 添加歌曲
+      tags:
+      - song
+  /api/song/delete:
+    get:
+      produces:
+      - application/json
+      responses: {}
+      summary: 删除歌曲
+      tags:
+      - song
+  /api/song/detail:
+    get:
+      parameters:
+      - description: 歌曲id
+        in: query
+        name: id
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses: {}
+      summary: 根据歌曲id获得歌曲信息
+      tags:
+      - song
+  /api/song/img/update:
+    post:
+      produces:
+      - application/json
+      responses: {}
+      summary: 更新歌曲图片
+      tags:
+      - song
+  /api/song/singer/detail:
+    get:
+      parameters:
+      - description: 歌手id
+        in: query
+        name: singerId
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses: {}
+      summary: 根据歌手id获得歌曲信息
+      tags:
+      - song
+  /api/song/singerName/detail:
+    get:
+      parameters:
+      - description: 歌手姓名
+        in: query
+        name: name
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses: {}
+      summary: 根据歌手名称获得歌曲信息
+      tags:
+      - song
+  /api/song/update:
+    post:
+      produces:
+      - application/json
+      responses: {}
+      summary: 更新歌曲信息
+      tags:
+      - song
+  /api/song/url/update:
+    post:
+      produces:
+      - application/json
+      responses: {}
+      summary: 更新歌曲
+      tags:
+      - song
+  /api/songList:
+    get:
+      produces:
+      - application/json
+      responses: {}
+      summary: 获得所有歌单
+      tags:
+      - songList
+  /api/songList/add:
+    post:
+      produces:
+      - application/json
+      responses: {}
+      summary: 添加歌单
+      tags:
+      - songList
+  /api/songList/delete:
+    get:
+      produces:
+      - application/json
+      responses: {}
+      summary: 删除歌单
+      tags:
+      - songList
+  /api/songList/img/update:
+    post:
+      produces:
+      - application/json
+      responses: {}
+      summary: 更新歌单图片
+      tags:
+      - songList
+  /api/songList/likeTitle/detail:
+    get:
+      produces:
+      - application/json
+      responses: {}
+      summary: 返回标题包含文字的歌单
+      tags:
+      - songList
+  /api/songList/style/detail:
+    get:
+      produces:
+      - application/json
+      responses: {}
+      summary: 根据类型获得歌单
+      tags:
+      - songList
+  /api/songList/update:
+    post:
+      produces:
+      - application/json
+      responses: {}
+      summary: 更新歌单信息
+      tags:
+      - songList
+  /api/user:
+    get:
+      produces:
+      - application/json
+      responses: {}
+      summary: 获得所有用户
+      tags:
+      - user
+  /api/user/add:
+    post:
+      produces:
+      - application/json
+      responses: {}
+      summary: 用户注册
+      tags:
+      - user
+  /api/user/avator/update:
+    post:
+      produces:
+      - application/json
+      responses: {}
+      summary: 更新用户图片
+      tags:
+      - user
+  /api/user/delete:
+    get:
+      produces:
+      - application/json
+      responses: {}
+      summary: 删除用户
+      tags:
+      - user
+  /api/user/detail:
+    get:
+      produces:
+      - application/json
+      responses: {}
+      summary: 根据用户id获得歌曲信息
+      tags:
+      - user
+  /api/user/login/status:
+    post:
+      produces:
+      - application/json
+      responses: {}
+      summary: 登录判断
+      tags:
+      - user
+  /api/user/update:
+    post:
+      produces:
+      - application/json
+      responses: {}
+      summary: 更新用户信息
+      tags:
+      - user
+  /api/user/updatePassword:
+    post:
+      produces:
+      - application/json
+      responses: {}
+      summary: 更新用户密码
+      tags:
+      - user
+swagger: "2.0"
