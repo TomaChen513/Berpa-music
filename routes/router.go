@@ -1,7 +1,6 @@
 package routes
 
 import (
-	// "log"
 	"fmt"
 	"net/http"
 	"strings"
